@@ -6,6 +6,7 @@ import numpy as np
 def cross_entropy(Y, P):
     """
     return: -sum(y *ln(p) + (1-y)*ln(1-p))
+            cross-entropy is inversely proportional to the total probability of an outcome
     """
     if len(Y)  == len(P):
         element = [Y[i] * np.log(P[i]) + (1-Y[i]) * np.log(1-P[i]) for i in range(len(Y))]
