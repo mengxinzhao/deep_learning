@@ -1,0 +1,30 @@
+1. Launching the notebook server
+jupyter notebook. By default, the notebook server runs at http://localhost:8888
+
+2. You should consider installing Notebook Conda to help manage your environments. Run the following command
+conda install nb_conda
+
+3. shutdown the entire server by pressing control + C twice in the terminal
+
+4. cheat sheet of marking on jupyter https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+
+5. keyboard shortcut  
+   1. enter + shfit : execute a cell and move on to next
+   2. a: create one cell above current
+      b: create one cell below current
+   3. l: add line number to a cell
+      L: add line number to all cells
+   4. dd: delete a cell
+   5. y: switch from markdown to code mode in a cell
+      m: switch from code mode to markdown mode in a cell
+   5. shift + m: merge surrouding cells ( how to split)
+6. Magic commands are preceded with one or two percent signs (% or %%) for line magics and cell magics, respectively. Line magics apply only to the line the magic command is written on, while cell magics apply to the whole cell
+   1. %timeit : how long a function to run
+      %%timeit : how long a cell to run
+   2. %matplotlib inline: inline matlab plot
+      %config InlineBackend.figure_format = 'retina' : render high resolution image
+   3. %pdb: debugging in the Notebook
+      use %pdb in the beginning and when you cause an error, you'll be able to inspect the variables in the current namespace.
+7. jupyter nbconvert --to html notebook.ipynb : convert ipynb to html
+8. jupyter nbconvert notebook.ipynb --to slides : convert ipnb to slideshow
+   jupyter nbconvert notebook.ipynb --to slides --post serve :  To convert it and immediately see it
