@@ -1,7 +1,12 @@
 #! /usr/bin/env python
 import numpy as np
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL']='2'
+
 from keras.utils import np_utils
 import tensorflow as tf
+
+
 # Using TensorFlow 1.0.0; use tf.python_io in later versions
 #tf.python.control_flow_ops = tf
 tf.python_io = tf
