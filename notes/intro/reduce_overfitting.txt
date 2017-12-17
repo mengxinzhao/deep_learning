@@ -1,0 +1,8 @@
+1. Use Early stopping
+2. Use regularization. 
+    1. overfitting cause: large coefficients ==> overfitting
+    2. Goal:prevent overfitting by punish large weights 
+    3. Methods: add lamda term of weight function to error function to penalize large weights. L1 error function and L2 error function
+    4. L1 regularization: good for feature selection. It will make the very less important features to 0.
+ 	L2 regularization: good for training models and producing generally all small weights. So L2 norm is small
+3. Dropout: intuition: prevent large weight dominating the training by randomly turning off some nodes and let the rest of the nodes pick up the work. Provide probability of each node being randomly dropped 
