@@ -1,9 +1,0 @@
-1. Gradient tells the direction that a function increases the most.
-2. Gradient descent uses "-" to find the most steep direction of decreasing a function.
-3. Everything else is partial derivatives and the nice property of sigmoid function  
-4. Weights and bias  are updated in below  way:
- w[i]+=alpha*(y-y_hat)*x[i]
- b += alpha*(y - y_hat)]
-5. Gradient descent weights updating and perceptron weights updating rules are similar. The difference is that 
-   a). gradient descent  y_hat could be any number vs perceptron y_hat can only be [0,1]. The latter one is classifier output
-   b). gradient descent when y_hat is in the correct region tells the line to go away from it so y_hat probability of being classified as correct label is even higher. when y_hat is not correctly classified, it tells the line to closer so y_hat slowly gets moved to the region where it should be
