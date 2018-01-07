@@ -1,0 +1,16 @@
+Convolutions Cont.
+1. Note, a "Fully Connected" layer is a standard, non convolutional layer, where all inputs are connected to all output neurons. This is also referred to as a "dense" layer, and is what we used in the previous two lessons.
+2. CNN inputs need to be the same size. Scale pictures to a single size!
+3. The steps_per_epoch argument of the fit_generator method indicates how many batches Keras takes from the generator before it moves to the next epoch
+4. Always add a ReLU activation function to the Conv2D layers in your CNN. With the exception of the final layer in the network, Dense layers should also have a ReLU activation function.
+5.When constructing a network for classification, the final layer in the network should be a Dense layer with a softmax activation function. The number of nodes in the final layer should equal the total number of classes in the dataset.
+6. General rule for setting weights
+The general rule for setting the weights in a neural network is to be close to zero without being too small. A good pracitce is to start your weights in the range of  [−y,y]
+  where  y=1/sqrt(n)
+  is the number of inputs to a given neuron).
+7.The normal distribution gave a slight increasse in accuracy and loss. Let's move closer to 0 and drop picked numbers that are x number of standard deviations away. This distribution is called Truncated Normal Distribution
+8.Batch normalization explained:
+https://medium.com/deeper-learning/glossary-of-deep-learning-batch-normalisation-8266dcd2fa82
+https://gab41.lab41.org/batch-normalization-what-the-hey-d480039a9e3b
+9. cnn loss function explained:
+https://stackoverflow.com/questions/34518656/how-to-interpret-loss-and-accuracy-for-a-machine-learning-model
